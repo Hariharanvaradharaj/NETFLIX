@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+       
+        
+    
+        <div class="cont"> 
+        <nav>
+            <div class="navimg">
+                <img src="net.png" alt="logo">
+            </div>
+           <div class="nav_cont">
+            <div class="navitem">
+                <select name="language" id="language select" class="lang">
+                    <option value=""><i class="fa-solid fa-language"></i>   English</option>
+                    <option value="">हिन्दी</option>
+                </select>
+               </div>
+               <div class="nav_sign">
+                <button ><a href="Index1.html"style="text-decoration: none;color: white;">Sign In</a></button>
+               </div>
+               
+            </div>
+            
+         </nav>
+         <div class="center">
+          <h1>Unlimited movies, TV</h1>
+          
+            
+            <h1>shows and more</h1><br>
+            <h3>Starts at ₹149. Cancel at any time.</h3><br>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p><br>
+            <div class="Sign">           
+            
+                <input type="text" placeholder="Email Address" style="font-size: large;padding-left: 20px;color: white;font-weight: 600;" >
+            
+            <button class="get">Get Started<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        </div>
+        
+        </div>
+
+        <div class="rainbow">
+            <img src="01.jpg" alt="">
+        </div>
+
+<div class="slide">
+  <h4>Trending Now</h4><br>
+
+  <div id="carouselExampleCaptions" class="carousel slide" style="width: 85%;margin-left: 120px;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        
+          <div class="row" >
+            <div class="col">
+            <img src="goat.webp" alt="Img" style="width: 200px;border-radius: 8px;">  
+            </div>
+            <div class="col">
+            <img src="maharaja.webp" alt="Img" style="width: 200px;border-radius: 8px;">  
+            </div>
+            <div class="col">
+            <img src="Nani.webp" alt="Img" style="width: 200px;border-radius: 8px;">  
+            </div>
+            <div class="col">
+            <img src="bad boys.webp" alt="Img" style="width: 200px;border-radius: 8px;">  
+            </div>
+            <div class="col">
+            <img src="bachan.webp" alt="Img" style="width: 200px;border-radius: 8px;">  
+            </div>
+           
+           
+
+             </div> 
+         
+      </div>
+     
+      <div class="carousel-item">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <img src="Fast & Furious.webp" alt="Img" style="width: 200px;border-radius: 8px;">  
+            </div>
+            <div class="col">
+              <img src="geostrom.webp" alt="Img" style="width: 200px;border-radius: 8px;">  
+            </div>
+            <div class="col">
+              <img src="kalki.webp" alt="Img" style="width: 200px;border-radius: 8px;">  
+            </div>
+            <div class="col">
+              <img src="rebel redge.webp" alt="Img" style="width: 200px;border-radius: 8px;">  
+            </div>
+            <div class="col">
+              <img src="sector 36.webp" alt="Img" style="width: 200px;border-radius: 8px;">  
+            </div>
+          </div>                
+      </div>
+    </div>
+  
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+      <span class="visually-hidden" >Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+</div>
+
+<div class="slide1">
+  <h4>More reasons to Join</h4>
+  <!-- <div class="s1" style="margin-left: 120px;">
+    <img src="10.jpg" alt="img" style="height: 280px;">
+    <img src="11.jpg" alt="img" style="height: 280px;">
+    <img src="12.jpg" alt="img" style="height: 280px;">
+    <img src="13.jpg" alt="img" style="height: 280px;">
+  </div> -->
+  <div class="s1" style="margin-left: 120px;">
+  <div class="card" style="width: 18rem;border: none;border-color: black;">
+    <img src="10.jpg" class="card-img-top" alt="img"> 
+  </div>
+  <div class="card" style="width: 18rem;border: none;border-color: black;">
+    <img src="11.jpg" class="card-img-top" alt="img"> 
+  </div>
+  <div class="card" style="width: 18rem;border: none;border-color: black;">
+    <img src="12.jpg" class="card-img-top" alt="img"> 
+  </div>
+  <div class="card" style="width: 18rem;border: none;border-color: black;">
+    <img src="13.jpg" class="card-img-top" alt="img"> 
+  </div>
+</div>
+</div>
+
+<div class="slide2">
+  <h4 style="padding-top: 45px;color: white;">Frequently Asked Questions</h4>
+  <div class="hh" style="padding-top: 1%;">
+  <p>
+    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidth" aria-expanded="false" aria-controls="collapseWidthExample" style="width: 90%;background-color: rgb(65, 68, 71);">
+      <div class="h">
+        <p style="font-size:x-large;">What is Netflix?</p>
+        <i class="fa-solid fa-plus"style="font-size:x-large;"></i>
+      </div>
+    </button>
+  </p>
+  <div>
+    <div class="collapse collapse-horizontal" id="collapseWidth">
+      <div class="card card-body" style="width: 90%;background-color: rgb(65, 68, 71);">
+        <p style="color: white;font-size: x-large;">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, <br>documentaries and more – on thousands of internet-connected devices.</p>
+        <p style="color: white;font-size: x-large;">You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price.<br> There's always something new to discover, and new TV shows and movies are added every week!</p>
+    </div><br>
+  </div>
+</div>
+</div>
+
+<div class="hh">
+  <p class="kl" style="width: 100%;">
+    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" style="width: 90%;background-color: rgb(65, 68, 71);">
+      <div class="h">
+        <p style="font-size:x-large;">How much does Netflix cost?</p>
+        <i class="fa-solid fa-plus"style="font-size:x-large;"></i>
+      </div>
+    </button>
+  </p>
+  <div>
+    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+      <div class="card card-body" style="width: 90%;background-color: rgb(65, 68, 71);">
+        <p style="color: white;font-size: x-large;">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly <br>fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+    </div><br>
+  </div>
+</div>
+
+
+</div> 
+
+<div class="hh">
+  <p>
+    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExa" aria-expanded="false" aria-controls="collapseWidthExample" style="width: 90%;background-color: rgb(65, 68, 71);">
+      <div class="h">
+        <p style="font-size:x-large;">Where can I watch?</p>
+        <i class="fa-solid fa-plus"style="font-size:x-large;"></i>
+      </div>
+    </button>
+  </p>
+  <div>
+    <div class="collapse collapse-horizontal" id="collapseWidthExa">
+      <div class="card card-body" style="width: 90%;background-color: rgb(65, 68, 71);">
+        <p style="color: white;font-size: x-large;">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from <br> your personal computer or on any internet-connected device that offers the Netflix app, including smart <br> TVs, smartphones, tablets, streaming media players and game consoles..</p>
+        <p style="color: white;font-size: x-large;">You can also download your favourite shows with the iOS or Android app. Use downloads to watch while <br> you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+    </div><br>
+  </div>
+</div>
+
+
+</div>
+
+<div class="hh">
+  <p>
+    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthEx" aria-expanded="false" aria-controls="collapseWidthExample" style="width: 90%;background-color: rgb(65, 68, 71);">
+      <div class="h">
+        <p style="font-size:x-large;">How do I Cancel?</p>
+        <i class="fa-solid fa-plus"style="font-size:x-large;"></i>
+      </div>
+    </button>
+  </p>
+  <div >
+    <div class="collapse collapse-horizontal" id="collapseWidthEx">
+      <div class="card card-body" style="width: 90%;background-color: rgb(65, 68, 71);">
+        <p style="color: white;font-size: x-large;">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account <br>online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+        
+    </div><br>
+  </div>
+</div>
+
+
+</div>
+
+<div class="hh">
+  <p>
+    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthE" aria-expanded="false" aria-controls="collapseWidthExample" style="width: 90%;background-color: rgb(65, 68, 71);">
+      <div class="h">
+        <p style="font-size:x-large;">What can I Watch on Netflix?</p>
+        <i class="fa-solid fa-plus"style="font-size:x-large;"></i>
+      </div>
+    </button>
+  </p>
+  <div>
+    <div class="collapse collapse-horizontal" id="collapseWidthE">
+      <div class="card card-body" style="width: 90%;background-color: rgb(65, 68, 71);">
+        <p style="color: white;font-size: x-large;">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix <br> originals, and more. Watch as much as you want, anytime you want.</p>
+        
+    </div><br>
+  </div>
+</div>
+
+
+</div>
+
+<div class="hh">
+  <p>
+    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseidthE" aria-expanded="false" aria-controls="collapseWidthExample" style="width: 90%;background-color: rgb(65, 68, 71);">
+      <div class="h">
+        <p style="font-size:x-large;">Is Netflix good for kids?</p>
+        <i class="fa-solid fa-plus"style="font-size:x-large;"></i>
+      </div>
+    </button>
+  </p>
+  <div>
+    <div class="collapse collapse-horizontal" id="collapseidthE">
+      <div class="card card-body" style="width: 90%;background-color: rgb(65, 68, 71);">
+        <p style="color: white;font-size: x-large;">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-<br> TV shows and films in their own space.</p>
+        <p style="color: white;font-size: x-large;"></p>
+        
+    </div>
+  </div><br>
+</div>
+
+
+</div>
+
+</div>
+
+<div class="cent">
+ 
+  <p>Ready to watch? Enter your email to create or restart your membership.</p>
+  <div class="Sign1" style="background-color: black;">           
+  
+      <input type="text" placeholder="Email Address" style="font-size: large;padding-left: 20px;color: white;font-weight: 600;" >
+  
+  <button class="get">Get Started<i class="fa-solid fa-arrow-right"></i></button>
+</div>
+<section style="padding-right: 65%;background-color: black;">
+  <p style="color: rgb(153, 153, 147);padding-top: 40px;">Questions?Call <a href="" style="color: rgb(153, 153, 147);"><u>000-800-919-1694</u></a></p>
+</section>
+
+<footer class="text-center" style="background-color: black;color: white;">
+  <!-- Grid container -->
+  <div class="container p-4" style="color: whitesmoke;">
+    <!-- Section: Social media -->
+   
+
+    <!-- Section: Form -->
+  
+
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="" style="color: white;">
+      <!--Grid row-->
+      <div class="row" style="color: white;">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-0 mb-0 mb-md-0" style="text-align: left;color: white">
+          <!-- <h5 class="text-uppercase">Links</h5> -->
+
+          <ul class="list-unstyled m-0">
+            <li>
+              <a class="" href="#!"style="color: rgb(153, 153, 147);">FAQ</a>
+            </li>
+            <li>
+              <a class="" href="#!"style="color: rgb(153, 153, 147);">Investor Relation</a>
+            </li>
+            <li>
+              <a class="" href="#!"style="color: rgb(153, 153, 147);">Privacy</a>
+            </li>
+            <li>
+              <a class="" href="#!"style="color: rgb(153, 153, 147);">Speed</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="text-align: left;">
+          <!-- <h5 class="text-uppercase">Links</h5> -->
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="" href="#!"style="color: rgb(153, 153, 147);">Help Center</a>
+            </li>
+            <li>
+              <a class="" href="#!"style="color: rgb(153, 153, 147);">Jobs</a>
+            </li>
+            <li>
+              <a class="" href="#!"style="color: rgb(153, 153, 147);">Cookie Preferences</a>
+            </li>
+            <li>
+              <a class="" href="#!"style="color: rgb(153, 153, 147);">Legal Notices</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="text-align: left;">
+          <!-- <h5 class="text-uppercase">Links</h5> -->
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="" href="#!"style="color: rgb(153, 153, 147);">Account</a>
+            </li>
+            <li>
+              <a class="" href="#!"style="color: rgb(153, 153, 147);">Ways to Watch</a>
+            </li>
+            <li>
+              <a class="" href="#!"style="color: rgb(153, 153, 147);">Corporate Information</a>
+            </li>
+            <li>
+              <a class="" href="#!"style="color: rgb(153, 153, 147);">Only on Netflix</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="text-align: left; color: white;">
+          <!-- <h5 class="text-uppercase">Links</h5> -->
+
+          <ul class="list-unstyled mb-0" style="color: rgb(153, 153, 147);">
+            <li style="color: white;">
+              <a class="" href="#!" style="color: rgb(153, 153, 147);">Media Center</a>
+            </li>
+            <li>
+              <a class="" style="color: rgb(153, 153, 147);" href="#!">Terms of Use</a>
+            </li>
+            <li>
+              <a class="" style="color: rgb(153, 153, 147);"href="#!">Contact Us</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+       
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div><br>
+  <div class="navitem" style="text-align: left;padding-left: 120px;padding-top: 15px;">
+    <select name="language" id="language select" class="lang">
+        <option value=""><i class="fa-solid fa-language"></i>   English</option>
+        <option value="">हिन्दी</option>
+    </select>
+   </div><br><br>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text" style="background-color: rgba(0, 0, 0, 0.05);text-align: left;padding-left: 120px;color: rgb(153, 153, 147);">
+    Netflix India
+    
+  </div>
+  <!-- Copyright -->
+<br><br><br><br>
+
+</div>
+
+
+  <!-- Footer -->
+    
+    <!-- Footer -->
+
+
+     
+
+         
+
+
+           
+      
+    
+</body>
+</html>

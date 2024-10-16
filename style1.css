@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cont{
+    width:100%;
+    height:110vh;
+    position:relative;
+    background-size: cover;
+    background-position: unset;
+   background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(backimg.jpg);    
+}
+
+.navimg img{
+    height: 95px;
+    width: 210px;
+    margin-left: 80px;
+    z-index: -10;
+    background:transparent;
+}
+.navitem select{
+    height: 40px;
+    width: 110px;
+    text-align: center;
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_cont{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 160px;
+    width: 210px;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+.nav_sign button {
+    height: 30px;
+    width: 80px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.nav_sign button:hover{
+    background-color: rgb(164, 4, 4);
+}
+
+.lang option{
+    color: rgb(2, 2, 2);
+}
+select{
+    color: white;
+}
+
+
+
+.box{
+    width: 450px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    height: 670px ;
+    margin-bottom: 150px;
+    
+
+
+}
+.box h1{
+    color: white;
+    text-align: left;
+    font-weight: 700;
+    padding-left: 40px;
+}
+
+form input{
+
+    width: 300px;
+    display: flex;
+    height: 55px;
+    color: white;
+    padding-left: 40px;
+}
+
+.inp input 
+{
+
+    color: white;
+    padding-left: 2px;
+    background: rgba(198, 167, 167, 0.1);
+    border: 1px solid white;   
+    border-radius: 2px;
+}
+
+.inp input ::placeholder{
+    background: rgba(198, 167, 167, 0.1);
+}
+
+
+.inp{
+    padding-top: 30px;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+
+}
+
+.sign {
+    height: 40px;
+    width: 80px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+.sign:hover{
+    background-color: rgb(164, 4, 4);
+}
+.use {
+    height: 40px;
+    width: 80px;
+    background-color:  rgba(242, 242, 242, 0.1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+.use:hover{
+    background-color:  rgba(242, 242, 242, 0.15);
+}
+   
+p a{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+p a:hover{
+    text-decoration: underline;
+}
+
+.po{
+    display:flex;
+    color: white;
+    width:300px;
+    padding-left: 50px;
+    
+    
+    
+}
+.po label{
+    width:200px;
+    height: 25px;
+    text-align: left;
+}
+
+.po input{
+    width:20px;
+    background-color:rgba(242, 242, 242, 0.1) ;
+    height: 25px;
+}
+
+.list-unstyled  li {
+    margin-top: 10px;
+    color: rgb(153, 153, 147);;
+   }
+   
+   .list-unstyled li
+    a {
+       
+       color: rgb(153, 153, 147);
+      }
+   
+      .text-body {
+       color: white;
+      }
+   
+.pp a{
+    text-decoration: none;
+
+}
